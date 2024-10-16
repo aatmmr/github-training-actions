@@ -25,3 +25,6 @@ jobs:
         run: | 
           echo "## Demo Summary Output :rocket:" >> $GITHUB_STEP_SUMMARY
           echo "The `time` from out custom action is ${{ steps.hello-action.outputs.time }}" >> $GITHUB_STEP_SUMMARY
+
+      - name: Echo Step Summary
+        run: echo $GITHUB_STEP_SUMMARY
