@@ -1,0 +1,11 @@
+name: Demo Anything
+
+on: [workflow_dispatch]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    environment: Demo
+    steps:
+      - name: Demo
+        run: echo "Some Content"
