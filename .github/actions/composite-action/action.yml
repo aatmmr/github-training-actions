@@ -6,7 +6,7 @@ inputs:
     default: "octocat"
     required: true
 run:
-  type: "composite"
+  using: "composite"
   steps:
     - run: echo "👋 ${{ inputs.who-to-greet }}"
       shell: bash
