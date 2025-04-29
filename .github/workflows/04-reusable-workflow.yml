@@ -1,6 +1,9 @@
 name: 04 - Reusable Workflow
 
 on:
+  push:
+    branches: 
+      - main
   workflow_dispatch:
     inputs:
       who-to-greet:
