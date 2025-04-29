@@ -1,16 +1,6 @@
 name: 04 - Reusable Workflow
 
 on:
-  push:
-    branches: 
-      - main
-  workflow_dispatch:
-    inputs:
-      who-to-greet:
-        description: 'The person to greet'
-        type: string
-        required: true
-        default: Universe
   workflow_call:
     inputs:
       who-to-greet:
