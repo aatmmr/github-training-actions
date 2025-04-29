@@ -2,7 +2,7 @@ name: "Composite Action Demo"
 description: "This is a simple composite action demo"
 inputs:
   who-to-greet:
-    desciption: "User to greet"
+    description: "User to greet"
     default: "octocat"
     required: true
 run:
