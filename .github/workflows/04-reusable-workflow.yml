@@ -1,6 +1,13 @@
 name: 04 - Reusable Workflow
 
 on:
+  workflow_dispatch:
+    inputs:
+      who-to-greet:
+        description: 'The person to greet'
+        type: string
+        required: true
+        default: World
   workflow_call:
     inputs:
       who-to-greet:
