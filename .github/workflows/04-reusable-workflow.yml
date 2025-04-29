@@ -10,7 +10,7 @@ on:
         description: 'The person to greet'
         type: string
         required: true
-        default: World
+        default: Universe
   workflow_call:
     inputs:
       who-to-greet:
