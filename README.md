@@ -2,6 +2,7 @@
 
 [![02 - CI Build for Docker Action](https://github.com/aatmmr/github-training-actions/actions/workflows/02-my-first-action.yml/badge.svg)](https://github.com/aatmmr/github-training-actions/actions/workflows/02-my-first-action.yml)
 [![03 - Staged Deployment](https://github.com/aatmmr/github-training-actions/actions/workflows/03-staged-deployment.yml/badge.svg)](https://github.com/aatmmr/github-training-actions/actions/workflows/03-staged-deployment.yml)
+[![Secrets Demo](https://github.com/aatmmr/github-training-actions/actions/workflows/secrets-demo.yml/badge.svg?branch=main)](https://github.com/aatmmr/github-training-actions/actions/workflows/secrets-demo.yml)
 
 Repo for the `GitHub Actions Fundamentals` training.
 
