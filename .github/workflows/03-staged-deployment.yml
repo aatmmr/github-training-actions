@@ -38,7 +38,7 @@ jobs:
     needs: [Test, Load-Test]
     environment:
       name: Production
-      url: https://xpirit.com
+      url: https://eficode.com
     if: github.event.inputs.environment == 'Production'
     steps:
       - run: |
