@@ -36,8 +36,11 @@ jobs:
   Production:
     runs-on: ubuntu-latest
     needs: [Test, Load-Test]
+    strategy:
+      matrix:
+        env: [Production, Staging]
     environment:
-      name: Production
+      name: ${{ matrix.env }}
       url: https://eficode.com
     if: github.event.inputs.environment == 'Production'
     steps:
