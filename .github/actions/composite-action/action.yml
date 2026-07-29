@@ -5,7 +5,7 @@ inputs:
     description: "User to greet"
     default: "octocat"
     required: true
-run:
+runs:
   using: "composite"
   steps:
     - run: echo "👋 ${{ inputs.who-to-greet }}"
