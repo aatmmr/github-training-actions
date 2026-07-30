@@ -8,16 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.5.3
+        uses: actions/checkout@7
       - name: Cache
-        uses: actions/cache@v4.3.0
+        uses: actions/cache@v5
         id: cache
         with:
           path: cache-demo
           key: ${{ runner.os }}-cache-demo
       - name: Generate Cache
         if: ${{ steps.cache.outputs.cache-hit == false }}
-        run: echo "1 2 3..." > cache
+        run: echo "1 2 3..." > cache-demo
       - name: Use Cache
-        run: cat cache
+        run: cat cache-demo
         
