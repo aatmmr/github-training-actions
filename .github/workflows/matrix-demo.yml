@@ -8,8 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [chrome, firefox, safari]
-        connection: [4G, 5G, 6G]
+        browser: [chrome, firefox]
+        connection: [4G, 5G]
     steps:
       - run: echo "Browser ${{ matrix.browser }}"
       - run: echo "Conection ${{ matrix.connection }}"
+      - uses: actions/upload-artifact@v7.0.1
+        with:
+          path: hol
+          name: "hol-${{ matrix.browser }}-${{ matrix.connection }}"
