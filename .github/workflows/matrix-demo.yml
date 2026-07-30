@@ -11,6 +11,7 @@ jobs:
         browser: [chrome, firefox]
         connection: [4G, 5G]
     steps:
+      - uses: actions/checkout@v7
       - run: echo "Browser ${{ matrix.browser }}"
       - run: echo "Conection ${{ matrix.connection }}"
       - uses: actions/upload-artifact@v7.0.1
